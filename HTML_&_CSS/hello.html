@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html & css</title>
+    <style>
+        @media (min-width: 601px) {
+            body {
+                background-color:red;
+            }
+        }
+        @media (max-width: 599px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div > h4 {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .grid{
+            display:grid;
+            padding: 10px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto ;
+        }
+
+        .grid_item{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <div class="flex">
+        <h4 class="flex_item">Element 1</h4>
+        <h4 class="flex_item">Element 2</h4>
+        <h4 class="flex_item">Element 3</h4>
+        <h4 class="flex_item">Element 4</h4>
+    </div>
+    <div class="grid">
+        <h4 class="grid_item">Grid Element 1</h4>
+        <h4 class="grid_item">Grid Element 2</h4>
+        <h4 class="grid_item">Grid Element 3</h4>
+        <h4 class="grid_item">Grid Element 4</h4>
+        <h4 class="grid_item">Grid Element 5</h4>
+        <h4 class="grid_item">Grid Element 6</h4>
+    </div>
+
+</body>
+</html>
